@@ -1,0 +1,19 @@
+.clock {
+  padding-top: 200px;
+}
+
+.clock-parent {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, green, violet);
+}
+
+.time {
+  font-size: 65px;
+}
+
+.date {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #fff;
+}
