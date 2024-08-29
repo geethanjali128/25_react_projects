@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import WatchParent from './components/stop-watch/WatchParent'
+import Progress from './components/step-progress-bar/Progress'
 function App() {
 
 
@@ -11,7 +11,8 @@ function App() {
       {/* <h1 className='title'>25 REACT.JS PROJECTS FOR INTERVIEW PREPERATION</h1> */}
       {/* <PaginationProducts/> */}
     {/* <ClockParent/> */}
-    <WatchParent/>
+    {/* <WatchParent/> */}
+    <Progress/>
     
     </div>
   )
