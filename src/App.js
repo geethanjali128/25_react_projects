@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Progress from './components/step-progress-bar/Progress'
+import Quote from './components/random-quote-generator/Quote'
 function App() {
 
 
@@ -12,8 +12,8 @@ function App() {
       {/* <PaginationProducts/> */}
     {/* <ClockParent/> */}
     {/* <WatchParent/> */}
-    <Progress/>
-    
+    {/* <Progress/> */}
+    <Quote/>
     </div>
   )
 }

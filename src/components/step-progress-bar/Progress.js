@@ -24,7 +24,7 @@ const Progress = () => {
 ]
   return (
     <div className='progress-parent'>
-        <h3 style={{textAlign:'center'}}>Step Progress Bar</h3>
+        <h3 style={{textAlign:'center',fontSize:"20px"}}>Step Progress Bar</h3>
       <ProgressBar steps={CHECKOUT_STEPS}/>
     </div>
   )
