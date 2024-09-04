@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Quote from './components/random-quote-generator/Quote'
+import TooltipParent from './components/tooltip/TooltipParent'
 function App() {
 
 
@@ -13,7 +13,8 @@ function App() {
     {/* <ClockParent/> */}
     {/* <WatchParent/> */}
     {/* <Progress/> */}
-    <Quote/>
+    {/* <Quote/> */}
+    <TooltipParent/>
     </div>
   )
 }
