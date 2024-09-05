@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import TooltipParent from './components/tooltip/TooltipParent'
+import Currency from './components/currency-converter/Currency'
 function App() {
 
 
@@ -14,7 +14,8 @@ function App() {
     {/* <WatchParent/> */}
     {/* <Progress/> */}
     {/* <Quote/> */}
-    <TooltipParent/>
+    {/* <TooltipParent/> */}
+    <Currency/>
     </div>
   )
 }
