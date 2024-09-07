@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Currency from './components/currency-converter/Currency'
+import Filter from './components/filtered-cards/Filter'
 function App() {
 
 
@@ -15,7 +15,8 @@ function App() {
     {/* <Progress/> */}
     {/* <Quote/> */}
     {/* <TooltipParent/> */}
-    <Currency/>
+    {/* <Currency/> */}
+    <Filter/>
     </div>
   )
 }
