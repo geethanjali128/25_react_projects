@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Filter from './components/filtered-cards/Filter'
+import Tip from './components/tip-calculator/Tip'
 function App() {
 
 
@@ -16,7 +16,8 @@ function App() {
     {/* <Quote/> */}
     {/* <TooltipParent/> */}
     {/* <Currency/> */}
-    <Filter/>
+    {/* <Filter/> */}
+    <Tip/>
     </div>
   )
 }
