@@ -71,7 +71,7 @@ const Tip=()=>{
                         <p>Tip Per Person:<span> {formState.tipAmount.tipPerPerson}</span></p>
                         <p>Total Amount Per Person: <span>{formState.tipAmount.totalAmountPerPerson}</span> </p>
                </div>
-            ):null
+            ):<p className='err'>{formState.errMsg}</p>
             }
         </div>
         </div>

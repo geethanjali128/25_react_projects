@@ -24,7 +24,7 @@
   color: #333;
 }
 .input-container {
-  margin: 20px 30px;
+  margin: 20px 50px;
 }
 
 .input-container > label {
@@ -41,7 +41,7 @@
 .tip-calculator > button {
   height: 40px;
   margin-top: 20px;
-  margin-left: 115px;
+  margin-left: 130px;
   border: 0;
   outline: 0;
   background-color: green;
@@ -70,4 +70,9 @@
 
 span {
   color: green;
+}
+
+.err {
+  color: red;
+  margin-top: 50px;
 }
