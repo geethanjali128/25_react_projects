@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
-import Tip from './components/tip-calculator/Tip'
+
+import MusicPlayer from './components/music-player/MusicPlayer'
+
 function App() {
 
 
@@ -17,7 +19,8 @@ function App() {
     {/* <TooltipParent/> */}
     {/* <Currency/> */}
     {/* <Filter/> */}
-    <Tip/>
+    {/* <Tip/> */}
+    <MusicPlayer/>
     </div>
   )
 }
