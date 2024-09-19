@@ -1,0 +1,36 @@
+/* progress.css */
+
+* {
+  background-color: #e8f5e9;
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 15% auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.progress-bar {
+  background-color: darkgray;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 30px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.wrapper {
+  height: 100%;
+  background-color: darkgray;
+}
+
+.innerWrapper {
+  background-color: #76c7c0;
+  height: 100%;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  transition: width 0.1s ease-in-out;
+}
