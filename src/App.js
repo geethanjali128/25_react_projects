@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 
-import ProgressBar from "./components/custom-progress-bar/ProgressBar";
+// import ProgressBar from "./components/custom-progress-bar/ProgressBar";
+import CustomProgressBar from "./components/custom-progress-bar-input/CustomProgressBar";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Filter/> */}
       {/* <Tip/> */}
       {/* <MusicPlayer/> */}
-      <ProgressBar />
+      {/* <ProgressBar /> */}
+      <CustomProgressBar />
     </div>
   );
 }
