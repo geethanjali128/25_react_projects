@@ -3,7 +3,7 @@ import "./App.css";
 
 // import ProgressBar from "./components/custom-progress-bar/ProgressBar";
 // import CustomProgressBar from "./components/custom-progress-bar-input/CustomProgressBar";
-import BMICalculator from "./components/BMI-calculator/BmiCalculator";
+import Ripple from "./components/button-ripple-effect/Ripple";
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
       {/* <MusicPlayer/> */}
       {/* <ProgressBar /> */}
       {/* <CustomProgressBar /> */}
-      <BMICalculator />
+      {/* <BMICalculator /> */}
+      <Ripple />
     </div>
   );
 }
