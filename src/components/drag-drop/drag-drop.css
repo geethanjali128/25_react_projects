@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgb(135, 135, 135),
+    darkgray,
+    rgb(135, 135, 135)
+  );
+}
+/* 
+.drag-and-drop-container {
+}
+
+.drag-and-drop-container h1 {
+  text-align: center;
+}
+
+.drag-and-drop-board {
+  display: flex;
+  margin-top: 20px;
+  gap: 75px;
+  margin-left: -30px;
+}
+
+.work-in-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 150px;
+  border: 1px solid black;
+}
+.completed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 150px;
+  border: 1px solid black;
+} */
+/* .drag-and-drop-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgoldenrod;
+  gap: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* .todo-card {
+  background-color: rgb(237, 204, 16);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px dashed black;
+  cursor: move;
+}
+
+.loader {
+  margin-top: 20px;
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}  */
+
+.drag-and-drop-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.drag-and-drop-container h1 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.drag-and-drop-board {
+  display: flex;
+  gap: 40px;
+}
+
+.todo-card {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3f800;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px dashed black;
+  cursor: move;
+}
+
+.work-in-progress,
+.completed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-list-wrapper {
+  height: 500px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loader {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}

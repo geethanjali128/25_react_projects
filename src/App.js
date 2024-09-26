@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
+import DragAndDrop from "./components/drag-drop/DragAndDrop";
 
 // import ProgressBar from "./components/custom-progress-bar/ProgressBar";
 // import CustomProgressBar from "./components/custom-progress-bar-input/CustomProgressBar";
-import Ripple from "./components/button-ripple-effect/Ripple";
 
 function App() {
   return (
@@ -22,7 +22,9 @@ function App() {
       {/* <ProgressBar /> */}
       {/* <CustomProgressBar /> */}
       {/* <BMICalculator /> */}
-      <Ripple />
+      {/* <Ripple /> */}
+      {/* <Main /> */}
+      <DragAndDrop />
     </div>
   );
 }

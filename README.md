@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<!-- drag and drop -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Event.dataTransfer is a JavaScript object provided by the Drag and Drop API that manages the data being transferred during drag-and-drop operations. It allows you to store, manipulate, and retrieve information about the dragged data between drag start and drop events.
 
-## Available Scripts
+<!-- Key Features of event.dataTransfer: -->
 
-In the project directory, you can run:
+Storing Data: You can store data using the setData(type, data) method. This data can later be accessed when the item is dropped.
 
-### `npm start`
+<!-- js code -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+event.dataTransfer.setData('text/plain', 'some data');
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Retrieving Data: The getData(type) method allows you to retrieve the data that was set during the drag operation, usually in the drop event.
 
-### `npm test`
+<!-- js code -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const data = event.dataTransfer.getData('text/plain');
+Drag Effects:
 
-### `npm run build`
+effectAllowed: Specifies what operations are allowed during the drag, such as copy, move, or link.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- js code -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+event.dataTransfer.effectAllowed = "move";
+dropEffect: Controls what happens when the item is dropped (whether it's copied, moved, etc.).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- js code -->
 
-### `npm run eject`
+event.dataTransfer.dropEffect = "move";
+File Dragging: It also supports dragging files from the file system into the browser, where you can access them through the event.dataTransfer.files property.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example:
+Drag Start: Set some data related to the dragged item.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- js code -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+function onDragStart(event) {
+event.dataTransfer.setData('id', event.target.id); // Store the item's ID
+}
+Drop: Retrieve the stored data when the item is dropped.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- js code -->
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+function onDrop(event) {
+const itemId = event.dataTransfer.getData('id'); // Get the stored ID
+console.log(`Dropped item ID: ${itemId}`);
+}
