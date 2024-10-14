@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import DragAndDrop from "./components/drag-drop/DragAndDrop";
+import FormValidation from "./components/form-validation/FormValidation";
 
 // import ProgressBar from "./components/custom-progress-bar/ProgressBar";
 // import CustomProgressBar from "./components/custom-progress-bar-input/CustomProgressBar";
@@ -24,7 +24,12 @@ function App() {
       {/* <BMICalculator /> */}
       {/* <Ripple /> */}
       {/* <Main /> */}
-      <DragAndDrop />
+      {/* <DragAndDrop /> */}
+      {/* <Controlled />
+      <Uncontrolled /> */}
+      {/* <UncontrolledPanel /> */}
+      {/* <Accordion /> */}
+      <FormValidation />
     </div>
   );
 }
