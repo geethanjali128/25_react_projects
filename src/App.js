@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import FormValidation from "./components/form-validation/FormValidation";
+import Quiz from "./components/quiz-app/Quiz";
 
 // import ProgressBar from "./components/custom-progress-bar/ProgressBar";
 // import CustomProgressBar from "./components/custom-progress-bar-input/CustomProgressBar";
@@ -29,7 +29,8 @@ function App() {
       <Uncontrolled /> */}
       {/* <UncontrolledPanel /> */}
       {/* <Accordion /> */}
-      <FormValidation />
+      {/* <FormValidation /> */}
+      <Quiz />
     </div>
   );
 }
